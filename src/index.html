@@ -1,0 +1,106 @@
+<!doctype html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>http-vue-loader/VueJS Example - Node-RED UI Builder</title>
+    <meta name="description" content="Node-RED UI Builder - http-vue-loader/VueJS Example">
+
+    <link rel="icon" href="./images/node-blue.ico">
+
+    <link type="text/css" rel="stylesheet" href="../uibuilder/vendor/bootstrap/dist/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="../uibuilder/vendor/bootstrap-vue/dist/bootstrap-vue.css" />
+
+    <link rel="stylesheet" href="./index.css" media="all">
+</head><body>
+    <div id="app">
+
+        <b-container id="app_container">
+
+       <h1>
+        Boomgrow Cell Controls
+       </h1>
+	<P>
+	 
+    <h3>Parent Switch State (debug only)</h3>
+	{{rack01.name}} L1:{{rack01.L1}} L2:{{rack01.L2}} L3:{{rack01.L3}} L4:{{rack01.L4}} L5:{{rack01.L5}} L6:{{rack01.L6}} F1:{{rack01.F1}} F2:{{rack01.F2}} <BR>
+	{{rack02.name}} L1:{{rack02.L1}} L2:{{rack02.L2}} L3:{{rack02.L3}} L4:{{rack02.L4}} L5:{{rack02.L5}} L6:{{rack02.L6}} F1:{{rack02.F1}} F2:{{rack02.F2}} <BR>
+	{{rack08.name}} L1:{{rack08.L1}} L2:{{rack08.L2}} L3:{{rack08.L3}} L4:{{rack08.L4}} L5:{{rack08.L5}} L6:{{rack08.L6}} F1:{{rack08.F1}} F2:{{rack08.F2}} <BR>
+	</P>
+
+	<p>
+	<!-- myrack is props 
+		 rack01, rack02 are data in parent
+
+	     @fromswitch are event $emit
+	     updateswitch are methods in parent	 
+	-->
+
+<b-card header="Rack01" border-variant="primary">
+	<my-button :myrack="rack01" @fromswitch="updateswitch"></my-button>
+</b-card>
+<b-card header="Rack02" border-variant="primary">	
+	<my-button :myrack="rack02" @fromswitch="updateswitch"></my-button>
+</b-card>
+<b-card header="Rack03" border-variant="primary">
+	<my-button :myrack="rack03" @fromswitch="updateswitch"></my-button>
+</b-card>
+<b-card header="Rack04" border-variant="primary">
+	<my-button :myrack="rack04" @fromswitch="updateswitch"></my-button>
+</b-card>
+<b-card header="Rack05" border-variant="primary">
+	<my-button :myrack="rack05" @fromswitch="updateswitch"></my-button>
+</b-card>
+<b-card header="Rack06" border-variant="primary">
+    <my-button :myrack="rack06" @fromswitch="updateswitch"></my-button>
+</b-card>
+<b-card header="Rack07" border-variant="primary">
+	<my-button :myrack="rack07" @fromswitch="updateswitch"></my-button>
+</b-card>
+<b-card header="Rack08" border-variant="primary">
+	<my-button :myrack="rack08" @fromswitch="updateswitch"></my-button>
+</b-card>
+<b-card header="Rack09" border-variant="primary">
+	<my-button :myrack="rack09" @fromswitch="updateswitch"></my-button>
+</b-card>
+<b-card header="Rack10" border-variant="primary">
+	<my-button :myrack="rack10" @fromswitch="updateswitch"></my-button>
+</b-card>
+<b-card header="Rack11" border-variant="primary">
+	<my-button :myrack="rack11" @fromswitch="updateswitch"></my-button>
+</b-card>
+<b-card header="Rack12" border-variant="primary">
+	<my-button :myrack="rack12" @fromswitch="updateswitch"></my-button>
+</b-card>
+<b-card header="Rack13" border-variant="primary">
+	<my-button :myrack="rack13" @fromswitch="updateswitch"></my-button>
+</b-card>
+<b-card header="Rack14" border-variant="primary">
+	<my-button :myrack="rack14" @fromswitch="updateswitch"></my-button>
+</b-card>
+<b-card header="Rack15" border-variant="primary">
+	<my-button :myrack="rack15" @fromswitch="updateswitch"></my-button>
+</b-card>
+
+    </b-container>
+    </div>
+
+
+    <!-- Default scripts -->
+    <!-------------------->
+    
+    <script src="../uibuilder/vendor/socket.io/socket.io.js"></script>
+    <!-- Use vue.min.js for production use -->
+    <script src="../uibuilder/vendor/vue/dist/vue.js"></script>
+    <script src="../uibuilder/vendor/bootstrap-vue/dist/bootstrap-vue.js"></script>
+
+    <!-- Loading from CDN -->
+    <!--script src="https://unpkg.com/http-vue-loader"></script -->
+
+    <!-- Loading from npm installed version -->
+    <script src="../uibuilder/vendor/http-vue-loader/src/httpVueLoader.js"></script> 
+
+    <script src="./uibuilderfe.min.js"></script> <!--    //prod version -->
+    <script src="./index.js"></script>
+
+</body></html>
