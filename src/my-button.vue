@@ -1,7 +1,10 @@
 <template>
   <div>
 	DEBUG :
-	{{ this.myrack.name }}
+	{{ this.myrack }}<BR>
+	name: {{ this.myrack.name }}
+	ver: {{ this.myrack.ver }}
+	uptime: {{ this.myrack.uptime }}
 	L1 {{ this.myrack.L1 }}
 	L2 {{ this.myrack.L2 }}
 	L3 {{ this.myrack.L3 }}
