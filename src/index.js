@@ -41,35 +41,93 @@ var app1 = new Vue({
 				console.log("rack01");
 				this.rack01 = obj; 
 				uibuilder.send( { 'topic': '/from-dashboard', 'payload': this.rack01 } )
+				uibuilder.send( { 'topic': '/bg/fc/racks/cmds', 
+							'payload': "{ name:" + this.rack01.name + ",STATUS:1}" } )
 		    	}		
 			if ( obj.name == "rack02" ) {
 				this.rack02 = obj; 
 				uibuilder.send( { 'topic': '/from-dashboard', 'payload': this.rack02 } )
+				uibuilder.send( { 'topic': '/bg/fc/racks/cmds', 
+							'payload': "{ name:" + this.rack02.name + ",STATUS:1}" } )
 			}
 			if ( obj.name == "rack03" ) {
 				console.log("rack03");
 				this.rack03 = obj; 
 				uibuilder.send( { 'topic': '/from-dashboard', 'payload': this.rack03 } )
+				uibuilder.send( { 'topic': '/bg/fc/racks/cmds', 
+							'payload': "{ name:" + this.rack03.name + ",STATUS:1}" } )
 			}
 			if ( obj.name == "rack04" ) {
 				this.rack04 = obj; 
 				uibuilder.send( { 'topic': '/from-dashboard', 'payload': this.rack04 } )
+				uibuilder.send( { 'topic': '/bg/fc/racks/cmds', 
+							'payload': "{ name:" + this.rack04.name + ",STATUS:1}" } )
 			}
 			if ( obj.name == "rack05" ) {
 				this.rack05 = obj; 
 				uibuilder.send( { 'topic': '/from-dashboard', 'payload': this.rack05 } )
+				uibuilder.send( { 'topic': '/bg/fc/racks/cmds', 
+							'payload': "{ name:" + this.rack05.name + ",STATUS:1}" } )
 			}
 			if ( obj.name == "rack06" ) {
 				this.rack06 = obj; 
 				uibuilder.send( { 'topic': '/from-dashboard', 'payload': this.rack06 } )
+				uibuilder.send( { 'topic': '/bg/fc/racks/cmds', 
+							'payload': "{ name:" + this.rack06.name + ",STATUS:1}" } )
 			}
 			if ( obj.name == "rack07" ) {
 				this.rack07 = obj; 
 				uibuilder.send( { 'topic': '/from-dashboard', 'payload': this.rack07 } )
+				uibuilder.send( { 'topic': '/bg/fc/racks/cmds', 
+							'payload': "{ name:" + this.rack07.name + ",STATUS:1}" } )
 			}
 			if ( obj.name == "rack08" ) {
 				this.rack08 = obj; 
 				uibuilder.send( { 'topic': '/from-dashboard', 'payload': this.rack08 } )
+				uibuilder.send( { 'topic': '/bg/fc/racks/cmds', 
+							'payload': "{ name:" + this.rack08.name + ",STATUS:1}" } )
+			}
+			if ( obj.name == "rack09" ) {
+				this.rack09 = obj; 
+				uibuilder.send( { 'topic': '/from-dashboard', 'payload': this.rack09 } )
+				uibuilder.send( { 'topic': '/bg/fc/racks/cmds', 
+							'payload': "{ name:" + this.rack09.name + ",STATUS:1}" } )
+			}
+			if ( obj.name == "rack10" ) {
+				this.rack10 = obj; 
+				uibuilder.send( { 'topic': '/from-dashboard', 'payload': this.rack10 } )
+				uibuilder.send( { 'topic': '/bg/fc/racks/cmds', 
+							'payload': "{ name:" + this.rack10.name + ",STATUS:1}" } )
+			}
+			if ( obj.name == "rack11" ) {
+				this.rack11 = obj; 
+				uibuilder.send( { 'topic': '/from-dashboard', 'payload': this.rack11 } )
+				uibuilder.send( { 'topic': '/bg/fc/racks/cmds', 
+							'payload': "{ name:" + this.rack11.name + ",STATUS:1}" } )
+			}
+			if ( obj.name == "rack12" ) {
+				this.rack12 = obj; 
+				uibuilder.send( { 'topic': '/from-dashboard', 'payload': this.rack12 } )
+				uibuilder.send( { 'topic': '/bg/fc/racks/cmds', 
+							'payload': "{ name:" + this.rack12.name + ",STATUS:1}" } )
+			}
+			if ( obj.name == "rack13" ) {
+				this.rack13 = obj; 
+				uibuilder.send( { 'topic': '/from-dashboard', 'payload': this.rack13 } )
+				uibuilder.send( { 'topic': '/bg/fc/racks/cmds', 
+							'payload': "{ name:" + this.rack13.name + ",STATUS:1}" } )
+			}
+			if ( obj.name == "rack14" ) {
+				this.rack14 = obj; 
+				uibuilder.send( { 'topic': '/from-dashboard', 'payload': this.rack14 } )
+				uibuilder.send( { 'topic': '/bg/fc/racks/cmds', 
+							'payload': "{ name:" + this.rack14.name + ",STATUS:1}" } )
+			}
+			if ( obj.name == "rack15" ) {
+				this.rack15 = obj; 
+				uibuilder.send( { 'topic': '/from-dashboard', 'payload': this.rack15 } )
+				uibuilder.send( { 'topic': '/bg/fc/racks/cmds', 
+							'payload': "{ name:" + this.rack15.name + ",STATUS:1}" } )
 			}
 				
 			} // updateswitch		
@@ -139,6 +197,8 @@ var app1 = new Vue({
         } // have property name
 		}) // onChange
 
+		// Send a status upload on load
+		uibuilder.send( { 'topic': '/bg/fc/racks/cmds', 'payload': "{HELLO:1}" } );
     } // --- End of mounted hook --- //
 
 }) // --- End of app1 --- //
