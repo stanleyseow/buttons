@@ -10,7 +10,8 @@
 
     <link type="text/css" rel="stylesheet" href="../uibuilder/vendor/bootstrap/dist/css/bootstrap.min.css" />
     <link type="text/css" rel="stylesheet" href="../uibuilder/vendor/bootstrap-vue/dist/bootstrap-vue.css" />
-
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Source+Sans+Pro&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Josefin+Sans|Quantico|Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css" media="all">
     <style>
 	body{
@@ -19,7 +20,7 @@
 	h1 {
 		padding-top: 40px;
 		padding-bottom: 10px;
-        font-family:  'Source Sans Pro', sans-serif;
+        font-family: 'Quantico', sans-serif;
         font-size: 45px;
 		color: #2d3d32;
 		font-kerning: normal;
@@ -47,7 +48,7 @@
 	-->
 
 <b-card header="Rack01" border-variant="primary">
-	<my-button :myrack="rack01" @fromswitch="updateswitch"></my-button>
+	<my-button v-bind:myrack="rack01" @fromswitch="updateswitch"></my-button>
 </b-card>
 <b-card header="Rack02" border-variant="primary">	
 	<my-button :myrack="rack02" @fromswitch="updateswitch"></my-button>

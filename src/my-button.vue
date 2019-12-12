@@ -17,32 +17,32 @@
 	<b-row>
 	<b-col align-self="center">
 		<b-button  :pressed.sync="toggle1" @click="handleClick1" pill variant="outline-success" size="lg">C1:{{ bool2IO(toggle1) }}</b-button>
-		<b-button  :pressed.sync="toggle2" @click="handleClick2" pill variant="outline-primary" size="lg">C2:{{ bool2IO(toggle2) }}</b-button>
-		<b-button  :pressed.sync="toggle3" @click="handleClick3" pill variant="outline-warning" size="lg">C3:{{ bool2IO(toggle3) }}</b-button>
-		<b-button  :pressed.sync="toggle7" @click="handleClick7" pill variant="outline-info" size="lg">F1:{{ bool2IO(toggle7) }}</b-button>
+		<b-button  :pressed.sync="toggle2" @click="handleClick2" pill variant="outline-success" size="lg">C2:{{ bool2IO(toggle2) }}</b-button>
+		<b-button  :pressed.sync="toggle3" @click="handleClick3" pill variant="outline-success" size="lg">C3:{{ bool2IO(toggle3) }}</b-button>
+		<b-button  :pressed.sync="toggle7" @click="handleClick7" pill variant="outline-warning" size="lg">F1:{{ bool2IO(toggle7) }}</b-button>
 	</b-col>
 	<b-col align-self="center">
 		<b-button  :pressed.sync="toggle4" @click="handleClick4" pill variant="outline-success" size="lg">C4:{{ bool2IO(toggle4) }}</b-button>
-		<b-button  :pressed.sync="toggle5" @click="handleClick5" pill variant="outline-primary" size="lg">C5:{{ bool2IO(toggle5) }}</b-button>
-		<b-button  :pressed.sync="toggle6" @click="handleClick6" pill variant="outline-warning" size="lg">C6:{{ bool2IO(toggle6) }}</b-button>
-		<b-button  :pressed.sync="toggle8" @click="handleClick8" pill variant="outline-info" size="lg">F2:{{ bool2IO(toggle8) }}</b-button>
+		<b-button  :pressed.sync="toggle5" @click="handleClick5" pill variant="outline-success" size="lg">C5:{{ bool2IO(toggle5) }}</b-button>
+		<b-button  :pressed.sync="toggle6" @click="handleClick6" pill variant="outline-success" size="lg">C6:{{ bool2IO(toggle6) }}</b-button>
+		<b-button  :pressed.sync="toggle8" @click="handleClick8" pill variant="outline-warning" size="lg">F2:{{ bool2IO(toggle8) }}</b-button>
 	</b-col>
 	</b-row>
 
 	<b-row>
 	<b-col align-self="center">
 	<BR><BR>	
-	<b-button @click="handleClick9" block pill variant="outline-danger" size="lg">Toggle top half</b-button>
+	<b-button @click="handleClick9" block pill variant="outline-success" size="lg">Toggle top half</b-button>
 	</b-col>
 
 	<b-col align-self="center">
 	<BR><BR>	
-	<b-button @click="handleClick10" block pill variant="outline-danger" size="lg">Toggle bottom half</b-button>
+	<b-button @click="handleClick10" block pill variant="outline-success" size="lg">Toggle bottom half</b-button>
 	</b-col>
 	</b-row>
 
 	<BR><BR>
-	<b-button @click="handleClick11" block pill variant="outline-danger" size="lg">All Toggle</b-button>
+	<b-button @click="handleClick11" block pill variant="outline-warning" size="lg">All Toggle</b-button>
 <BR><BR>
 <h5>Power Usage : Lights: 5A  Fan1: 2A Fan2: 2A</h5>
 <h5>Cultiva : </h5>
@@ -184,3 +184,16 @@ module.exports =  {
   	},
 } // end of exports
 </script>
+
+<style scoped>
+    h5 {
+        padding-top: 10px;
+		padding-bottom: 5px;
+        font-family:'Josefin Sans', sans-serif;
+        font-size: 20px;
+		color: #2d3d32;
+		font-kerning: normal;
+		letter-spacing: 1px;
+		line-height: 10px;
+    }
+</style>
