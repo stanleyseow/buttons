@@ -1,18 +1,8 @@
 <template>
   <div>
-	DEBUG :
-	{{ this.myrack }}<BR>
-	name: {{ this.myrack.name }}
-	ver: {{ this.myrack.ver }}
-	uptime: {{ this.myrack.uptime }}
-	L1 {{ this.myrack.L1 }}
-	L2 {{ this.myrack.L2 }}
-	L3 {{ this.myrack.L3 }}
-	L4 {{ this.myrack.L4 }}
-	L5 {{ this.myrack.L5 }}
-	L6 {{ this.myrack.L6 }}
-	F1 {{ this.myrack.F1 }}
-	F2 {{ this.myrack.F2 }}
+	
+	<h6>Last status :
+	{{ this.myrack }} </h6>
 	<BR>
 	<b-row>
 	<b-col align-self="center">
@@ -196,4 +186,16 @@ module.exports =  {
 		letter-spacing: 1px;
 		line-height: 10px;
     }
+
+    h6 {
+        padding-top: 10px;
+		padding-bottom: 5px;
+        font-family:'Josefin Sans', sans-serif;
+        font-size: 15px;
+		color: #2d3d32;
+		font-kerning: normal;
+		letter-spacing: 1px;
+		line-height: 10px;
+    }
+
 </style>
