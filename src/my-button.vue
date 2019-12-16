@@ -41,7 +41,6 @@
 <h5>Transplant Date: </h5>
 <h5>Harvest Date: </h5>
 <h5>Last cmds : 15th Nov 2019</h5>
-<h5>Remarks : Productions or Testing new settings</h5>
 
 
 
@@ -146,25 +145,25 @@ module.exports =  {
 				this.myrack.L1 = !this.myrack.L1;
 				this.myrack.L2 = !this.myrack.L2;
 				this.myrack.L3 = !this.myrack.L3;
-				this.myrack.F1 = !this.myrack.F1;
+				// this.myrack.F1 = !this.myrack.F1;
 				this.$emit('fromswitch',this.myrack);
 		},				 
 		handleClick10() {
 				this.myrack.L4 = !this.myrack.L4;
 				this.myrack.L5 = !this.myrack.L5;
 				this.myrack.L6 = !this.myrack.L6;
-				this.myrack.F2 = !this.myrack.F2;
+				// this.myrack.F2 = !this.myrack.F2;
 				this.$emit('fromswitch',this.myrack);
 		},				 
 		handleClick11() {
 				this.myrack.L1 = !this.myrack.L1;
 				this.myrack.L2 = !this.myrack.L2;
 				this.myrack.L3 = !this.myrack.L3;
-				this.myrack.F1 = !this.myrack.F1;
+				//this.myrack.F1 = !this.myrack.F1;
 				this.myrack.L4 = !this.myrack.L4;
 				this.myrack.L5 = !this.myrack.L5;
 				this.myrack.L6 = !this.myrack.L6;
-				this.myrack.F2 = !this.myrack.F2;
+				//this.myrack.F2 = !this.myrack.F2;
 				this.$emit('fromswitch',this.myrack);
 		},				 
 		
@@ -178,24 +177,24 @@ module.exports =  {
 <style scoped>
     h5 {
         padding-top: 10px;
-		padding-bottom: 5px;
+	padding-bottom: 5px;
         font-family:'Josefin Sans', sans-serif;
         font-size: 20px;
-		color: #2d3d32;
-		font-kerning: normal;
-		letter-spacing: 1px;
-		line-height: 10px;
+	color: #2d3d32;
+	font-kerning: normal;
+	letter-spacing: 1px;
+	line-height: 10px;
     }
 
     h6 {
         padding-top: 10px;
-		padding-bottom: 5px;
+	padding-bottom: 10px;
         font-family:'Josefin Sans', sans-serif;
         font-size: 15px;
-		color: #2d3d32;
-		font-kerning: normal;
-		letter-spacing: 1px;
-		line-height: 10px;
+	color: #2d3d32;
+	font-kerning: normal;
+	letter-spacing: 1px;
+	line-height: 10px;
     }
 
 </style>
