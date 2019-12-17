@@ -176,15 +176,22 @@ module.exports =  {
 </script>
 
 <style scoped>
+    b-button {
+    	padding-bottom: 5px;
+    	padding-top: 10px;
+    	letter-spacing: 1px;
+		line-height: 10px;
+    }
+    
     h5 {
-        padding-top: 10px;
-		padding-bottom: 5px;
+        padding-top: 2px;
+		padding-bottom: 2px;
         font-family:'Josefin Sans', sans-serif;
         font-size: 20px;
-		color: #2d3d32;
+		color: #c6c6c6;
 		font-kerning: normal;
 		letter-spacing: 1px;
-		line-height: 10px;
+		line-height: 25px;
     }
 
     h6 {
@@ -192,10 +199,10 @@ module.exports =  {
 		padding-bottom: 5px;
         font-family:'Josefin Sans', sans-serif;
         font-size: 15px;
-		color: #2d3d32;
+		color: #c6c6c6;
 		font-kerning: normal;
 		letter-spacing: 1px;
-		line-height: 10px;
+		line-height: 18px;
     }
 
 </style>
