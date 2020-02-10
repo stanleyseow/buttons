@@ -8,6 +8,7 @@ var app1 = new Vue({
      *  To load from the common folder use like: 'common/component-name.vue' */
     components: {
         'my-button' : httpVueLoader('my-button.vue'),
+        'my-button-r1' : httpVueLoader('my-button-r1.vue'),
 
     }, // --- End of components --- //
 
